@@ -1,0 +1,15 @@
+{
+  "level_display": "tconstruct:default",
+  "modules": [
+    {
+      "type": "tinkers_ingenuity:chivalry_modifier",
+      "bonus": {
+        "factor": 0.03,
+        "operation": "multiplier_base",
+        "single": false
+      },
+      "max_multiplier": 1
+    }
+  ],
+  "tooltip_display": "always"
+}

@@ -1,0 +1,16 @@
+{
+  "default": [
+    {
+      "level": 1,
+      "name": "tinkers_ingenuity:be_impolite"
+    }
+  ],
+  "perStat": {
+    "tconstruct:armor": [
+      {
+        "level": 1,
+        "name": "tinkers_ingenuity:vulnerability_insurance"
+      }
+    ]
+  }
+}

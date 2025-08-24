@@ -1,0 +1,22 @@
+{
+  "level_display": "tconstruct:no_levels",
+  "modules": [
+    {
+      "type": "tinkers_ingenuity:stat_with_trait_count",
+      "factor": 0.15,
+      "operation": "multiplier_base",
+      "single": true,
+      "stat": "tconstruct:durability",
+      "trait": "tconstruct:overslime"
+    },
+    {
+      "type": "tinkers_ingenuity:stat_with_trait_count",
+      "factor": 0.15,
+      "operation": "multiplier_base",
+      "single": true,
+      "stat": "tconstruct:overslime",
+      "trait": "tconstruct:overslime"
+    }
+  ],
+  "tooltip_display": "always"
+}

@@ -1,0 +1,10 @@
+{
+  "type": "tconstruct:melting_fuel",
+  "duration": 120,
+  "fluid": {
+    "amount": 50,
+    "tag": "forge:dragon_breath"
+  },
+  "rate": 22,
+  "temperature": 2200
+}

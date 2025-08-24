@@ -1,0 +1,11 @@
+{
+  "level_display": "tconstruct:default",
+  "modules": [
+    {
+      "type": "tinkers_ingenuity:knight_bloodline_modifier",
+      "max_multiplier": 2,
+      "protect": 0.45
+    }
+  ],
+  "tooltip_display": "always"
+}

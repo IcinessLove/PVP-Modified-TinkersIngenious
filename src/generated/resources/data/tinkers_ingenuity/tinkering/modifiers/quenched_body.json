@@ -1,0 +1,24 @@
+{
+  "level_display": "tconstruct:default",
+  "modules": [
+    {
+      "type": "tinkers_ingenuity:source_or_entity_protection",
+      "entity": "mantle:on_fire",
+      "entity_protection": {
+        "factor": 1.0,
+        "operation": "addition",
+        "single": false
+      },
+      "source": {
+        "type": "mantle:tag",
+        "tag": "minecraft:is_fire"
+      },
+      "source_protection": {
+        "factor": 5.0,
+        "operation": "addition",
+        "single": false
+      }
+    }
+  ],
+  "tooltip_display": "always"
+}

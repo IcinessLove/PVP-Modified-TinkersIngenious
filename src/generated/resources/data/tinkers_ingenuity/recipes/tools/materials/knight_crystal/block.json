@@ -1,0 +1,13 @@
+{
+  "type": "tconstruct:material",
+  "ingredient": {
+    "tag": "forge:storage_blocks/knight_crystal"
+  },
+  "leftover": {
+    "count": 1,
+    "tag": "forge:ingots/knight_crystal"
+  },
+  "material": "tinkers_ingenuity:knight_crystal",
+  "needed": 1,
+  "value": 9
+}

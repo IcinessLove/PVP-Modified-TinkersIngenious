@@ -1,0 +1,19 @@
+{
+  "type": "tconstruct:modifier",
+  "allow_crystal": true,
+  "inputs": [
+    {
+      "item": "minecraft:gold_ingot"
+    },
+    {
+      "item": "minecraft:blackstone"
+    }
+  ],
+  "result": "tinkers_ingenuity:golden",
+  "slots": {
+    "upgrades": 1
+  },
+  "tools": {
+    "tag": "tinkers_ingenuity:modifiable_curio"
+  }
+}

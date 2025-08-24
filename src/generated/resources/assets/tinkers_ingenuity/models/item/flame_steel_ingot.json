@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "tinkers_ingenuity:item/metal/flame_steel_ingot"
+  }
+}

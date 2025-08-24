@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "tinkers_ingenuity:block/metal/flame_steel_block"
+  }
+}

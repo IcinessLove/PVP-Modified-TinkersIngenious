@@ -1,0 +1,11 @@
+{
+  "type": "tconstruct:item_part_builder",
+  "pattern": "tinkers_ingenuity:medal_ribbons",
+  "pattern_item": {
+    "tag": "forge:sand/colorless"
+  },
+  "result": {
+    "count": 4,
+    "item": "tinkers_ingenuity:medal_ribbons_sand_cast"
+  }
+}

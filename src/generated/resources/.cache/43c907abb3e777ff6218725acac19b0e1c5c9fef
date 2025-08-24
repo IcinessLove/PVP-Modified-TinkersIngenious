@@ -1,0 +1,12 @@
+// 1.20.1	2025-06-29T14:29:43.2009708	Tags for minecraft:damage_type mod id tinkers_ingenuity
+851f5e824723a9f4ca1737b1211db85b6cfbda56 data/forge/tags/damage_type/direct.json
+c1991804fb8aad55ce730bc4fa5df66b5a33f473 data/forge/tags/damage_type/ignore_scaling.json
+c1991804fb8aad55ce730bc4fa5df66b5a33f473 data/forge/tags/damage_type/is_magic.json
+c1991804fb8aad55ce730bc4fa5df66b5a33f473 data/minecraft/tags/damage_type/avoids_guardian_thorns.json
+4e5a00c4aa3c1581b13fbbb04340d832bb685a82 data/minecraft/tags/damage_type/bypasses_armor.json
+83fae06083e24b438c95427e4899e17b03fb0be4 data/minecraft/tags/damage_type/bypasses_cooldown.json
+1dc0374718e931d1b8f40820f84462264c3fa3df data/minecraft/tags/damage_type/bypasses_effects.json
+1dc0374718e931d1b8f40820f84462264c3fa3df data/minecraft/tags/damage_type/bypasses_enchantments.json
+d260b3a0a07c3317c7338d763901a1af74672973 data/minecraft/tags/damage_type/bypasses_invulnerability.json
+1dc0374718e931d1b8f40820f84462264c3fa3df data/minecraft/tags/damage_type/bypasses_resistance.json
+ef3db0065720b75bf824857277c379e0e2002f86 data/minecraft/tags/damage_type/is_projectile.json

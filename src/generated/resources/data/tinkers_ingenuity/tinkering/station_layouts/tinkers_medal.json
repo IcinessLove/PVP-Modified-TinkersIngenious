@@ -1,0 +1,28 @@
+{
+  "icon": {
+    "item": "tinkers_ingenuity:tinkers_medal",
+    "nbt": "{Damage:0,tic_broken:0b,tic_display:1b,tic_materials:[\"tconstruct:ui_render#head\",\"tconstruct:ui_render#handle\",\"tconstruct:ui_render#extra\",\"tconstruct:ui_render#large\",\"tconstruct:ui_render#extra_large\"]}"
+  },
+  "input_slots": [
+    {
+      "filter": {
+        "item": "tinkers_ingenuity:medal_ribbons"
+      },
+      "icon": "tinkers_ingenuity:medal_ribbons",
+      "translation_key": "item.tinkers_ingenuity.medal_ribbons",
+      "x": 39,
+      "y": 35
+    },
+    {
+      "filter": {
+        "item": "tinkers_ingenuity:medal_body"
+      },
+      "icon": "tinkers_ingenuity:medal_body",
+      "translation_key": "item.tinkers_ingenuity.medal_body",
+      "x": 21,
+      "y": 53
+    }
+  ],
+  "sortIndex": 2,
+  "translation_key": "item.tinkers_ingenuity.tinkers_medal"
+}

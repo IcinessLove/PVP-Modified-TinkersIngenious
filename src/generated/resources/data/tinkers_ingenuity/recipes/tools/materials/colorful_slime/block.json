@@ -1,0 +1,13 @@
+{
+  "type": "tconstruct:material",
+  "ingredient": {
+    "tag": "forge:storage_blocks/colorful_slime"
+  },
+  "leftover": {
+    "count": 1,
+    "tag": "forge:ingots/colorful_slime"
+  },
+  "material": "tinkers_ingenuity:colorful_slime",
+  "needed": 1,
+  "value": 9
+}

@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_colorful_slime_nugget": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "tinkers_ingenuity:colorful_slime_nugget"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "tinkers_ingenuity:craftingot_from_nugget/colorful_slime_block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_colorful_slime_nugget",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "tinkers_ingenuity:craftingot_from_nugget/colorful_slime_block"
+    ]
+  },
+  "sends_telemetry_event": false
+}

@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material",
+  "ingredient": {
+    "item": "tinkers_ingenuity:coloured_glaze_star"
+  },
+  "material": "tinkers_ingenuity:coloured_glaze_star",
+  "needed": 1,
+  "value": 1
+}

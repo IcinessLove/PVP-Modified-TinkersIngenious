@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "tinkers_ingenuity:item/cast/medal_ribbons_cast"
+  }
+}

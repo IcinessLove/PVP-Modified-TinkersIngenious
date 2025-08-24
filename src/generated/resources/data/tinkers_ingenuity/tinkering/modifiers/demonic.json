@@ -1,0 +1,16 @@
+{
+  "level_display": "tconstruct:default",
+  "modules": [
+    {
+      "type": "tinkers_ingenuity:simple_protection",
+      "entity": "mantle:any",
+      "protection": {
+        "factor": 0.45,
+        "operation": "multiplier_base",
+        "single": false
+      },
+      "source": "tinkers_ingenuity:is_magic"
+    }
+  ],
+  "tooltip_display": "always"
+}

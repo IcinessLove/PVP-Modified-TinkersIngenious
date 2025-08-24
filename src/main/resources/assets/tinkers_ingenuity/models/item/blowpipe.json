@@ -1,0 +1,21 @@
+{
+  "loader": "tconstruct:tool",
+  "parent": "forge:item/default-tool",
+  "textures": {
+    "tube": "tinkers_ingenuity:item/blowpipe/blowpipe_tube",
+    "mouth": "tinkers_ingenuity:item/blowpipe/blowpipe_mouth"
+  },
+  "modifier_roots": [
+    "tinkers_ingenuity:item/blowpipe/modifiers/"
+  ],
+  "parts": [
+    {
+      "name": "tube",
+      "index": 1
+    },
+    {
+      "name": "mouth",
+      "index": 0
+    }
+  ]
+}

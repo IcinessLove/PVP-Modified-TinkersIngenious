@@ -1,0 +1,11 @@
+{
+  "type": "tconstruct:molding_table",
+  "material": {
+    "tag": "tconstruct:casts/sand"
+  },
+  "pattern": {
+    "type": "tconstruct:material",
+    "item": "tinkers_ingenuity:medal_ribbons"
+  },
+  "result": "tinkers_ingenuity:medal_ribbons_sand_cast"
+}

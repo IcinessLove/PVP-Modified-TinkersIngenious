@@ -1,0 +1,16 @@
+{
+  "level_display": "tconstruct:default",
+  "modules": [
+    {
+      "type": "tinkers_ingenuity:curio_modify_attack",
+      "attacker": "tinkers_ingenuity:full_health",
+      "bonus": {
+        "factor": 0.5,
+        "operation": "multiplier_base",
+        "single": false
+      },
+      "target": "mantle:any"
+    }
+  ],
+  "tooltip_display": "always"
+}

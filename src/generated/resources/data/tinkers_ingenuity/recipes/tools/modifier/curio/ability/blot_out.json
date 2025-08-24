@@ -1,0 +1,19 @@
+{
+  "type": "tconstruct:modifier",
+  "allow_crystal": true,
+  "inputs": [
+    {
+      "tag": "minecraft:wool"
+    },
+    {
+      "item": "minecraft:ender_pearl"
+    }
+  ],
+  "result": "tinkers_ingenuity:blot_out",
+  "slots": {
+    "abilities": 1
+  },
+  "tools": {
+    "tag": "tinkers_ingenuity:modifiable_curio"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:heart_of_the_sea"
+    },
+    {
+      "item": "minecraft:diamond"
+    },
+    {
+      "item": "minecraft:quartz"
+    },
+    {
+      "item": "tconstruct:cobalt_ingot"
+    }
+  ],
+  "result": {
+    "item": "tinkers_ingenuity:elfs_crystal"
+  }
+}

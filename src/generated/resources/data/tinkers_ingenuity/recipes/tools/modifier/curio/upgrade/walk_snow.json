@@ -1,0 +1,16 @@
+{
+  "type": "tconstruct:modifier",
+  "allow_crystal": true,
+  "inputs": [
+    {
+      "item": "minecraft:leather_boots"
+    }
+  ],
+  "result": "tinkers_ingenuity:walk_snow",
+  "slots": {
+    "upgrades": 1
+  },
+  "tools": {
+    "tag": "tinkers_ingenuity:modifiable_curio"
+  }
+}

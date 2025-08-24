@@ -1,0 +1,13 @@
+{
+  "type": "tconstruct:material",
+  "ingredient": {
+    "tag": "forge:storage_blocks/flame_steel"
+  },
+  "leftover": {
+    "count": 1,
+    "tag": "forge:ingots/flame_steel"
+  },
+  "material": "tinkers_ingenuity:flame_steel",
+  "needed": 1,
+  "value": 9
+}

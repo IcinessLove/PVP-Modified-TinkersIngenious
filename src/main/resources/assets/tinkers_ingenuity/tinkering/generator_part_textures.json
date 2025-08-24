@@ -1,0 +1,20 @@
+{
+  "parts": [
+    {
+      "path": "tinkers_ingenuity:item/tinkers_medal/medal_ribbons",
+      "stat_type": "tinkers_ingenuity:curio_extra"
+    },
+    {
+      "path": "tinkers_ingenuity:item/tinkers_medal/medal_body",
+      "stat_type": "tinkers_ingenuity:curio_main"
+    },
+    {
+      "path": "tinkers_ingenuity:item/blowpipe/blowpipe_tube",
+      "stat_type": "tconstruct:grip"
+    },
+    {
+      "path": "tinkers_ingenuity:item/blowpipe/blowpipe_mouth",
+      "stat_type": "tconstruct:limb"
+    }
+  ]
+}

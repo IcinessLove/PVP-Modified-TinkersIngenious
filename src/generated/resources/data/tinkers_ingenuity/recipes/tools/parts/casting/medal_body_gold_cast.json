@@ -1,0 +1,8 @@
+{
+  "type": "tconstruct:table_casting_material",
+  "cast": {
+    "tag": "tinkers_ingenuity:casts/multi_use/medal_body"
+  },
+  "item_cost": 4,
+  "result": "tinkers_ingenuity:medal_body"
+}

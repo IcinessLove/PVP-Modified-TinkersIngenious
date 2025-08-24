@@ -1,0 +1,16 @@
+{
+  "level_display": "tconstruct:default",
+  "modules": [
+    {
+      "type": "tinkers_ingenuity:curio_attack_immune",
+      "action": "heal_entity",
+      "action_amount": 1.0,
+      "chance": 0.1,
+      "source": {
+        "type": "mantle:tag",
+        "tag": "minecraft:is_fire"
+      }
+    }
+  ],
+  "tooltip_display": "always"
+}

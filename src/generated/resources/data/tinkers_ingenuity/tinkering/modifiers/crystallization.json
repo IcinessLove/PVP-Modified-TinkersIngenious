@@ -1,0 +1,13 @@
+{
+  "level_display": "tconstruct:no_levels",
+  "modules": [
+    {
+      "type": "tinkers_ingenuity:crystallization_modifier",
+      "bonus": 0.02,
+      "chance": 0.45,
+      "max": 10,
+      "time": 900
+    }
+  ],
+  "tooltip_display": "always"
+}

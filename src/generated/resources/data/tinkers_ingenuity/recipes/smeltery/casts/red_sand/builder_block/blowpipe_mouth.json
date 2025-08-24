@@ -1,0 +1,11 @@
+{
+  "type": "tconstruct:item_part_builder",
+  "pattern": "tinkers_ingenuity:blowpipe_mouth",
+  "pattern_item": {
+    "tag": "forge:sand/red"
+  },
+  "result": {
+    "count": 4,
+    "item": "tinkers_ingenuity:blowpipe_mouth_red_sand_cast"
+  }
+}

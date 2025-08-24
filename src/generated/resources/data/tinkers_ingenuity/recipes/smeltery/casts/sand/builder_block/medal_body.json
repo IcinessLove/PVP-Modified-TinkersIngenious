@@ -1,0 +1,11 @@
+{
+  "type": "tconstruct:item_part_builder",
+  "pattern": "tinkers_ingenuity:medal_body",
+  "pattern_item": {
+    "tag": "forge:sand/colorless"
+  },
+  "result": {
+    "count": 4,
+    "item": "tinkers_ingenuity:medal_body_sand_cast"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "tinkers_ingenuity:craft/material/plague_bone"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_venombone": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "tconstruct:venombone"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_venombone",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "tinkers_ingenuity:craft/material/plague_bone"
+    ]
+  },
+  "sends_telemetry_event": false
+}

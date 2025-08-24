@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "tag": "forge:storage_blocks/flame_steel"
+  },
+  "result": {
+    "amount": 810,
+    "tag": "forge:molten_flame_steel"
+  },
+  "temperature": 1200,
+  "time": 216
+}

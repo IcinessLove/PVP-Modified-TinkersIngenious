@@ -1,0 +1,12 @@
+{
+  "stats": {
+    "tinkers_ingenuity:curio_extra": {},
+    "tinkers_ingenuity:curio_main": {
+      "curio_armor": 0.08,
+      "curio_max_health": 7.0,
+      "curio_melee_attack": 0.09,
+      "curio_movement_speed": 0.02,
+      "curio_projectile_attack": 0.08
+    }
+  }
+}

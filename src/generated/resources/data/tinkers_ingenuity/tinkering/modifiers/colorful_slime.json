@@ -1,0 +1,14 @@
+{
+  "level_display": "tconstruct:default",
+  "modules": [
+    {
+      "type": "tinkers_ingenuity:all_float_stat_copy",
+      "factor": 5.0E-5,
+      "operation": "multiplier_base",
+      "source": "tconstruct:overslime",
+      "with_multiplier": true
+    }
+  ],
+  "priority": 22,
+  "tooltip_display": "always"
+}

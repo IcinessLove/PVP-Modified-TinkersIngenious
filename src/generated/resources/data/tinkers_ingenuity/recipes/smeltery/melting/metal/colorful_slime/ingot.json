@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "tag": "forge:ingots/colorful_slime"
+  },
+  "result": {
+    "amount": 90,
+    "tag": "forge:molten_colorful_slime"
+  },
+  "temperature": 900,
+  "time": 63
+}

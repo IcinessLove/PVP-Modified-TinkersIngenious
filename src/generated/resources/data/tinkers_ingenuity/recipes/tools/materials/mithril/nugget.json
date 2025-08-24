@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material",
+  "ingredient": {
+    "tag": "forge:nuggets/mithril"
+  },
+  "material": "tinkers_ingenuity:mithril",
+  "needed": 9,
+  "value": 1
+}

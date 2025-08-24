@@ -1,0 +1,13 @@
+{
+  "type": "tconstruct:casting_table",
+  "cast": {
+    "item": "minecraft:nether_star"
+  },
+  "cast_consumed": true,
+  "cooling_time": 80,
+  "fluid": {
+    "amount": 2000,
+    "tag": "tconstruct:molten_glass"
+  },
+  "result": "tinkers_ingenuity:coloured_glaze_star"
+}

@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item": "minecraft:echo_shard"
+  },
+  "result": {
+    "amount": 45,
+    "tag": "forge:sculk_gene"
+  },
+  "temperature": 1200,
+  "time": 40
+}

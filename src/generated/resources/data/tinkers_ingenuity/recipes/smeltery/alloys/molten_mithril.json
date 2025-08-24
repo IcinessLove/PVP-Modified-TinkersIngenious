@@ -1,0 +1,22 @@
+{
+  "type": "tconstruct:alloy",
+  "inputs": [
+    {
+      "amount": 180,
+      "tag": "forge:terrestrial_solution"
+    },
+    {
+      "amount": 250,
+      "tag": "tconstruct:molten_clay"
+    },
+    {
+      "amount": 200,
+      "tag": "tconstruct:molten_emerald"
+    }
+  ],
+  "result": {
+    "amount": 90,
+    "tag": "forge:molten_mithril"
+  },
+  "temperature": 1250
+}

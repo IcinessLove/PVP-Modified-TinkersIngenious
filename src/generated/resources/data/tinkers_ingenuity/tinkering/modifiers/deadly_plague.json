@@ -1,0 +1,12 @@
+{
+  "level_display": "tconstruct:default",
+  "modules": [
+    {
+      "type": "tinkers_ingenuity:force_add_effect",
+      "effect": "tinkers_ingenuity:deadly_plague",
+      "level": 1,
+      "time": 200
+    }
+  ],
+  "tooltip_display": "always"
+}

@@ -1,0 +1,22 @@
+{
+  "type": "tconstruct:alloy",
+  "inputs": [
+    {
+      "amount": 200,
+      "tag": "tconstruct:molten_diamond"
+    },
+    {
+      "amount": 270,
+      "tag": "forge:molten_manyullyn"
+    },
+    {
+      "amount": 270,
+      "tag": "forge:sculk_gene"
+    }
+  ],
+  "result": {
+    "amount": 90,
+    "tag": "forge:molten_black_flash_alloy"
+  },
+  "temperature": 1200
+}

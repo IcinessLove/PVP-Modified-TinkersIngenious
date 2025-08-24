@@ -1,0 +1,14 @@
+{
+  "level_display": "tconstruct:default",
+  "modules": [
+    {
+      "type": "tinkers_ingenuity:curio_after_attack",
+      "action": "heal_entity",
+      "amount": 1.0,
+      "attacker": "tinkers_ingenuity:full_charged",
+      "crit_bonus": true,
+      "target": "mantle:any"
+    }
+  ],
+  "tooltip_display": "always"
+}

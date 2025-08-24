@@ -1,0 +1,22 @@
+{
+  "type": "tconstruct:modifier",
+  "allow_crystal": true,
+  "inputs": [
+    {
+      "item": "minecraft:amethyst_block"
+    },
+    {
+      "item": "minecraft:redstone"
+    },
+    {
+      "item": "minecraft:string"
+    }
+  ],
+  "result": "tinkers_ingenuity:rapid_fire",
+  "slots": {
+    "abilities": 1
+  },
+  "tools": {
+    "tag": "tconstruct:modifiable/ranged"
+  }
+}

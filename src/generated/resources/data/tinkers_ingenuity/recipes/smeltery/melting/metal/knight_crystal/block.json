@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "tag": "forge:storage_blocks/knight_crystal"
+  },
+  "result": {
+    "amount": 810,
+    "tag": "forge:molten_knight_crystal"
+  },
+  "temperature": 1100,
+  "time": 208
+}

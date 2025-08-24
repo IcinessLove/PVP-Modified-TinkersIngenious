@@ -1,0 +1,22 @@
+{
+  "type": "tconstruct:alloy",
+  "inputs": [
+    {
+      "amount": 180,
+      "tag": "tconstruct:molten_debris"
+    },
+    {
+      "amount": 150,
+      "tag": "tconstruct:molten_diamond"
+    },
+    {
+      "amount": 300,
+      "tag": "tconstruct:molten_amethyst"
+    }
+  ],
+  "result": {
+    "amount": 90,
+    "tag": "forge:molten_knight_crystal"
+  },
+  "temperature": 1100
+}

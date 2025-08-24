@@ -1,0 +1,16 @@
+{
+  "level_display": "tconstruct:default",
+  "modules": [
+    {
+      "type": "tinkers_ingenuity:extra_magic_attack",
+      "attacker": "mantle:any",
+      "damage": {
+        "factor": 0.1,
+        "operation": "multiplier_total",
+        "single": false
+      },
+      "target": "mantle:any"
+    }
+  ],
+  "tooltip_display": "always"
+}

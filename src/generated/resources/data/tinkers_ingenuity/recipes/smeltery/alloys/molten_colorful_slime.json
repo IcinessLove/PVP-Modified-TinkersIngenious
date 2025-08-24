@@ -1,0 +1,26 @@
+{
+  "type": "tconstruct:alloy",
+  "inputs": [
+    {
+      "amount": 750,
+      "tag": "tconstruct:sky_slime"
+    },
+    {
+      "amount": 750,
+      "tag": "forge:magma"
+    },
+    {
+      "amount": 750,
+      "tag": "tconstruct:ender_slime"
+    },
+    {
+      "amount": 90,
+      "tag": "forge:molten_hepatizon"
+    }
+  ],
+  "result": {
+    "amount": 90,
+    "tag": "forge:molten_colorful_slime"
+  },
+  "temperature": 900
+}

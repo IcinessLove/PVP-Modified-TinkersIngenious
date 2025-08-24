@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "X": {
+      "item": "tinkers_ingenuity:flame_steel_nugget"
+    }
+  },
+  "pattern": [
+    "XXX",
+    "XXX",
+    "XXX"
+  ],
+  "result": {
+    "item": "tinkers_ingenuity:flame_steel_ingot"
+  },
+  "show_notification": true
+}

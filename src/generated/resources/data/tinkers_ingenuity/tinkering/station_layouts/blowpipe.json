@@ -1,0 +1,28 @@
+{
+  "icon": {
+    "item": "tinkers_ingenuity:blowpipe",
+    "nbt": "{Damage:0,tic_broken:0b,tic_display:1b,tic_materials:[\"tconstruct:ui_render#head\",\"tconstruct:ui_render#handle\",\"tconstruct:ui_render#extra\",\"tconstruct:ui_render#large\",\"tconstruct:ui_render#extra_large\"]}"
+  },
+  "input_slots": [
+    {
+      "filter": {
+        "item": "tinkers_ingenuity:blowpipe_tube"
+      },
+      "icon": "tinkers_ingenuity:blowpipe_tube",
+      "translation_key": "item.tinkers_ingenuity.blowpipe_tube",
+      "x": 39,
+      "y": 35
+    },
+    {
+      "filter": {
+        "item": "tinkers_ingenuity:blowpipe_mouth"
+      },
+      "icon": "tinkers_ingenuity:blowpipe_mouth",
+      "translation_key": "item.tinkers_ingenuity.blowpipe_mouth",
+      "x": 21,
+      "y": 53
+    }
+  ],
+  "sortIndex": 2,
+  "translation_key": "item.tinkers_ingenuity.blowpipe"
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "tinkers_ingenuity:item/material/coloured_glaze_star"
+  }
+}

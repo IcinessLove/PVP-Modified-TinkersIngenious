@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "tag": "forge:nuggets/knight_crystal"
+  },
+  "result": {
+    "amount": 10,
+    "tag": "forge:molten_knight_crystal"
+  },
+  "temperature": 1100,
+  "time": 23
+}

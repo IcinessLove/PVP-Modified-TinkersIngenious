@@ -1,0 +1,7 @@
+{
+  "tinkers_ingenuity:rapid_fire": "tinkers_ingenuity:gui/modifiers/ability/rapid_fire",
+
+  "tinkers_ingenuity:blot_out": "tinkers_ingenuity:gui/modifiers/ability/curios/blot_out",
+  "tinkers_ingenuity:walk_snow": "tinkers_ingenuity:gui/modifiers/upgrade/curios/walk_snow",
+  "tinkers_ingenuity:golden": ["minecraft:item/gold_ingot", "tinkers_ingenuity:gui/modifiers/small/curios"]
+}

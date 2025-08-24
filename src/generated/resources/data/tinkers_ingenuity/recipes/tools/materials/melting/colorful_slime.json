@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material_melting",
+  "input": "tinkers_ingenuity:colorful_slime",
+  "result": {
+    "amount": 90,
+    "tag": "forge:molten_colorful_slime"
+  },
+  "temperature": 900
+}

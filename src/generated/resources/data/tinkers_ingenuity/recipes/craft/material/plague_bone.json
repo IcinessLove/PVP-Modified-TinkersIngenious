@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "tconstruct:venombone"
+    },
+    {
+      "item": "minecraft:soul_sand"
+    },
+    {
+      "item": "minecraft:nether_wart"
+    }
+  ],
+  "result": {
+    "item": "tinkers_ingenuity:plague_bone"
+  }
+}

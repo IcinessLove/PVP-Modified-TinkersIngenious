@@ -1,0 +1,26 @@
+{
+  "perStat": {
+    "tconstruct:armor": [
+      {
+        "level": 1,
+        "name": "tinkers_ingenuity:past_memories"
+      }
+    ],
+    "tconstruct:melee_harvest": [
+      {
+        "level": 1,
+        "name": "tinkers_ingenuity:ender_resonance"
+      },
+      {
+        "level": 1,
+        "name": "tinkers_ingenuity:final_reinforcement"
+      }
+    ],
+    "tconstruct:ranged": [
+      {
+        "level": 1,
+        "name": "tinkers_ingenuity:final_reinforcement"
+      }
+    ]
+  }
+}

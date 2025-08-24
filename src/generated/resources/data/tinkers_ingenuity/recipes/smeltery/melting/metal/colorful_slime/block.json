@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "tag": "forge:storage_blocks/colorful_slime"
+  },
+  "result": {
+    "amount": 810,
+    "tag": "forge:molten_colorful_slime"
+  },
+  "temperature": 900,
+  "time": 190
+}

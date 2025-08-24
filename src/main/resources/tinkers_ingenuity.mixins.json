@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "package": "com.xiaoyue.tinkers_ingenuity.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "tinkers_ingenuity.refmap.json",
+  "mixins": [
+    "SweepAttackMixin",
+    "ToolAttackUtilMixin",
+    "ToolStackInvoker"
+  ],
+  "minVersion": "0.8",
+  "client": [
+  ]
+}

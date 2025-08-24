@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "tag": "forge:nuggets/black_gold"
+  },
+  "result": {
+    "amount": 10,
+    "tag": "forge:molten_black_gold"
+  },
+  "temperature": 900,
+  "time": 21
+}

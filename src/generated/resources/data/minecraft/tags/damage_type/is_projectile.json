@@ -1,0 +1,19 @@
+{
+  "values": [
+    "tinkers_ingenuity:arrow-bypass_magic",
+    "tinkers_ingenuity:arrow-bypass_entity_inv",
+    "tinkers_ingenuity:arrow-bypass_entity_inv-bypass_magic",
+    "tinkers_ingenuity:arrow-bypass_cooldown",
+    "tinkers_ingenuity:arrow-bypass_cooldown-bypass_magic",
+    "tinkers_ingenuity:arrow-bypass_cooldown-bypass_entity_inv",
+    "tinkers_ingenuity:arrow-bypass_cooldown-bypass_entity_inv-bypass_magic",
+    "tinkers_ingenuity:arrow-bypass_armor",
+    "tinkers_ingenuity:arrow-bypass_armor-bypass_magic",
+    "tinkers_ingenuity:arrow-bypass_armor-bypass_entity_inv",
+    "tinkers_ingenuity:arrow-bypass_armor-bypass_entity_inv-bypass_magic",
+    "tinkers_ingenuity:arrow-bypass_armor-bypass_cooldown",
+    "tinkers_ingenuity:arrow-bypass_armor-bypass_cooldown-bypass_magic",
+    "tinkers_ingenuity:arrow-bypass_armor-bypass_cooldown-bypass_entity_inv",
+    "tinkers_ingenuity:arrow-bypass_armor-bypass_cooldown-bypass_entity_inv-bypass_magic"
+  ]
+}

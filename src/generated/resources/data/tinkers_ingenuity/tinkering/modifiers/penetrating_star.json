@@ -1,0 +1,16 @@
+{
+  "level_display": "tconstruct:default",
+  "modules": [
+    {
+      "type": "tinkers_ingenuity:create_source",
+      "attacker": "mantle:any",
+      "source": "bypass_entity_inv"
+    },
+    {
+      "type": "tinkers_ingenuity:create_source",
+      "attacker": "mantle:any",
+      "source": "bypass_cooldown"
+    }
+  ],
+  "tooltip_display": "always"
+}

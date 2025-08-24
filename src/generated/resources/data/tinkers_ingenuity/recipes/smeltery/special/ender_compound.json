@@ -1,0 +1,22 @@
+{
+  "type": "tconstruct:alloy",
+  "inputs": [
+    {
+      "amount": 1000,
+      "tag": "tconstruct:ender_slime"
+    },
+    {
+      "amount": 500,
+      "tag": "forge:ender"
+    },
+    {
+      "amount": 500,
+      "tag": "forge:dragon_breath"
+    }
+  ],
+  "result": {
+    "amount": 100,
+    "tag": "forge:ender_compound"
+  },
+  "temperature": 1700
+}

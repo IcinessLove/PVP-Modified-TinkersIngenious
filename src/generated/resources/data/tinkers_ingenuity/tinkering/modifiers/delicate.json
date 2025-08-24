@@ -1,0 +1,30 @@
+{
+  "level_display": "tconstruct:default",
+  "modules": [
+    {
+      "type": "tconstruct:stat_boost",
+      "flat": 0.49,
+      "operation": "multiply_base",
+      "stat": "tconstruct:mining_speed"
+    },
+    {
+      "type": "tconstruct:stat_boost",
+      "flat": 0.00,
+      "operation": "multiply_base",
+      "stat": "tconstruct:attack_damage"
+    },
+    {
+      "type": "tconstruct:stat_boost",
+      "flat": 0.00,
+      "operation": "multiply_base",
+      "stat": "tconstruct:projectile_damage"
+    },
+    {
+      "type": "tconstruct:stat_boost",
+      "flat": -0.49,
+      "operation": "multiply_base",
+      "stat": "tconstruct:durability"
+    }
+  ],
+  "tooltip_display": "always"
+}

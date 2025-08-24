@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item": "minecraft:dragon_breath"
+  },
+  "result": {
+    "amount": 250,
+    "tag": "forge:dragon_breath"
+  },
+  "temperature": 1200,
+  "time": 30
+}

@@ -1,0 +1,8 @@
+{
+  "type": "tconstruct:item_part_builder",
+  "pattern": "tinkers_ingenuity:blowpipe_tube",
+  "pattern_item": {
+    "tag": "tconstruct:casts/sand"
+  },
+  "result": "tinkers_ingenuity:blowpipe_tube_sand_cast"
+}

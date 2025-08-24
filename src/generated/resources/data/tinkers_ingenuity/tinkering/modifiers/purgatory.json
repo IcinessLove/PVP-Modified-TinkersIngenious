@@ -1,0 +1,20 @@
+{
+  "level_display": "tconstruct:default",
+  "modules": [
+    {
+      "type": "tinkers_ingenuity:mixed_modification",
+      "bonus": {
+        "factor": 0.2,
+        "operation": "multiplier_base",
+        "single": false
+      },
+      "entity": "mantle:on_fire",
+      "multi_bonus": {
+        "break_speed": true,
+        "melee_damage": true,
+        "modify_stat": "tconstruct:projectile_damage"
+      }
+    }
+  ],
+  "tooltip_display": "always"
+}

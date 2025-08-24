@@ -1,0 +1,33 @@
+{
+  "level_display": "tconstruct:default",
+  "modules": [
+    {
+      "type": "tinkers_ingenuity:mixed_modification",
+      "bonus": {
+        "factor": 0.12,
+        "operation": "multiplier_base",
+        "single": false
+      },
+      "multi_bonus": {
+        "break_speed": true,
+        "melee_damage": false,
+        "modify_stat": "tconstruct:velocity"
+      }
+    },
+    {
+      "type": "tconstruct:attribute",
+      "attribute": "minecraft:generic.attack_speed",
+      "each_level": 0.12,
+      "operation": "multiply_base",
+      "slots": [
+        "mainhand",
+        "offhand",
+        "feet",
+        "legs",
+        "chest",
+        "head"
+      ]
+    }
+  ],
+  "tooltip_display": "always"
+}

@@ -1,0 +1,24 @@
+{
+  "default": [
+    {
+      "level": 1,
+      "name": "tinkers_ingenuity:mysterious"
+    },
+    {
+      "level": 1,
+      "name": "tinkers_ingenuity:dexterous"
+    }
+  ],
+  "perStat": {
+    "tconstruct:armor": [
+      {
+        "level": 1,
+        "name": "tinkers_ingenuity:mysterious"
+      },
+      {
+        "level": 1,
+        "name": "tinkers_ingenuity:demonic"
+      }
+    ]
+  }
+}

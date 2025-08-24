@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material_fluid",
+  "fluid": {
+    "amount": 90,
+    "tag": "forge:molten_mithril"
+  },
+  "output": "tinkers_ingenuity:mithril",
+  "temperature": 1250
+}

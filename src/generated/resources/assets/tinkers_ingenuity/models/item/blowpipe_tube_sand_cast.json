@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "tinkers_ingenuity:item/cast/blowpipe_tube_sand_cast"
+  }
+}

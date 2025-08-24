@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material",
+  "ingredient": {
+    "tag": "forge:nuggets/knight_crystal"
+  },
+  "material": "tinkers_ingenuity:knight_crystal",
+  "needed": 9,
+  "value": 1
+}

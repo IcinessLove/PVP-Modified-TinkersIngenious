@@ -1,0 +1,17 @@
+{
+  "level_display": "tconstruct:default",
+  "modules": [
+    {
+      "type": "tinkers_ingenuity:curio_break_speed",
+      "block": "mantle:any",
+      "effective": true,
+      "entity": "mantle:any",
+      "modifier": {
+        "factor": 0.25,
+        "operation": "multiplier_base",
+        "single": false
+      }
+    }
+  ],
+  "tooltip_display": "always"
+}

@@ -1,0 +1,8 @@
+@MethodsReturnNonnullByDefault
+@ParametersAreNonnullByDefault
+
+package com.xiaoyue.tinkers_ingenuity.register;
+
+import net.minecraft.MethodsReturnNonnullByDefault;
+
+import javax.annotation.ParametersAreNonnullByDefault;

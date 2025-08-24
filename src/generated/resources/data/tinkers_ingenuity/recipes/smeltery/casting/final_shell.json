@@ -1,0 +1,13 @@
+{
+  "type": "tconstruct:casting_table",
+  "cast": {
+    "item": "minecraft:shulker_shell"
+  },
+  "cast_consumed": true,
+  "cooling_time": 45,
+  "fluid": {
+    "amount": 100,
+    "tag": "forge:ender_compound"
+  },
+  "result": "tinkers_ingenuity:final_shell"
+}

@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material",
+  "ingredient": {
+    "tag": "forge:ingots/flame_steel"
+  },
+  "material": "tinkers_ingenuity:flame_steel",
+  "needed": 1,
+  "value": 1
+}

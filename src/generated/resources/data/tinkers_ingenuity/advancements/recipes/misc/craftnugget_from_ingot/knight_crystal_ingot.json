@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_knight_crystal_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "tinkers_ingenuity:knight_crystal_ingot"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "tinkers_ingenuity:craftnugget_from_ingot/knight_crystal_ingot"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_knight_crystal_ingot",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "tinkers_ingenuity:craftnugget_from_ingot/knight_crystal_ingot"
+    ]
+  },
+  "sends_telemetry_event": false
+}

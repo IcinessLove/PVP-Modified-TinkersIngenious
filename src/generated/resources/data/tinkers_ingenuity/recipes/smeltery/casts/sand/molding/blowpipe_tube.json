@@ -1,0 +1,11 @@
+{
+  "type": "tconstruct:molding_table",
+  "material": {
+    "tag": "tconstruct:casts/sand"
+  },
+  "pattern": {
+    "type": "tconstruct:material",
+    "item": "tinkers_ingenuity:blowpipe_tube"
+  },
+  "result": "tinkers_ingenuity:blowpipe_tube_sand_cast"
+}

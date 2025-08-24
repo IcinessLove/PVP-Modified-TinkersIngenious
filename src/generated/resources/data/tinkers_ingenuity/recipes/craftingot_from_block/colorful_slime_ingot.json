@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "tinkers_ingenuity:colorful_slime_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "tinkers_ingenuity:colorful_slime_ingot"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "loader": "tconstruct:tool",
+  "parent": "forge:item/default",
+  "textures": {
+    "ribbons": "tinkers_ingenuity:item/tinkers_medal/medal_ribbons",
+    "body": "tinkers_ingenuity:item/tinkers_medal/medal_body"
+  },
+  "modifier_roots": [
+    "tinkers_ingenuity:item/tinkers_medal/modifiers/"
+  ],
+  "parts": [
+    {
+      "name": "ribbons",
+      "index": 0
+    },
+    {
+      "name": "body",
+      "index": 1
+    }
+  ]
+}
