@@ -53,7 +53,7 @@ public class KnightBloodline extends SimpleModifier {
             float amount = event.getAmount();
             if (levels > 0 && amount > 0) {
                 float reduced = living.getMaxHealth() / (Math.min(5,1 + 0.4f * levels));
-                event.setAmount(reduced);
+                event.setAmount(Math.min(amount,reduced));
             }
         }); 
     }
