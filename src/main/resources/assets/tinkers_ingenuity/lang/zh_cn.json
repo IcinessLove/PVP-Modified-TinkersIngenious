@@ -140,7 +140,7 @@
   "modifier.tinkers_ingenuity.cooperation.description": "这件工具的耐久与黏液覆层将随着工具上的黏液材料增多而提高",
   "modifier.tinkers_ingenuity.cooperation.flavor": "我们联合！",
   "modifier.tinkers_ingenuity.cold_blooded": "冷血",
-  "modifier.tinkers_ingenuity.cold_blooded.description": "攻击满血目标时大幅提高你造成的攻击伤害",
+  "modifier.tinkers_ingenuity.cold_blooded.description": "攻击满血目标时提高你造成的攻击伤害",
   "modifier.tinkers_ingenuity.cold_blooded.flavor": "残暴！",
   "modifier.tinkers_ingenuity.lithe": "轻盈",
   "modifier.tinkers_ingenuity.lithe.description": "穿戴者的挖掘速度、攻击速度与弹射物速度将获得提升",
