@@ -4,7 +4,7 @@
     {
       "type": "tinkers_ingenuity:curio_after_attack",
       "action": "heal_entity",
-      "amount": 1.0,
+      "amount": 0.5,
       "attacker": "tinkers_ingenuity:full_charged",
       "crit_bonus": true,
       "target": "mantle:any"

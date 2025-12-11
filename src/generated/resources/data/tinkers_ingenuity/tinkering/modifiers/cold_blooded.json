@@ -5,8 +5,8 @@
       "type": "tinkers_ingenuity:curio_modify_attack",
       "attacker": "tinkers_ingenuity:full_health",
       "bonus": {
-        "factor": 2,
-        "operation": "add",
+        "factor": 0.10,
+        "operation": "multiplier_base",
         "single": false
       },
       "target": "mantle:any"

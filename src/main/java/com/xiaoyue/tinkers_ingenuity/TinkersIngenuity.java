@@ -60,7 +60,6 @@ public class TinkersIngenuity
         TIItems.register();
         TIFluids.register();
         TIEffects.register();
-        TIHooks.register();
         TIToolStats.register();
         TIDamageTypes.register();
         MeleeCacheCapability.register();
@@ -76,13 +75,18 @@ public class TinkersIngenuity
     public static void onModifierRegister(ModifierManager.ModifierRegistrationEvent event) {
         TIModifiers.onRegister(event);
     }
+    
+@SubscribeEvent
+public static void onRegister(RegisterEvent event) {
+    // 先处理 TinkersIngenuity 自己的注册（延迟注册 TIHooks）
+    TIHooks.register(event);
 
-    @SubscribeEvent
-    public static void onRegister(RegisterEvent event) {
-        if (event.getRegistryKey().equals(Registries.RECIPE_SERIALIZER)) {
-            SimpleInvoker.invokeModMethod(MODID, SerialLoader.class);
-        }
+    // 你原来的 SerialLoader 调用按需保留
+    if (event.getRegistryKey().equals(Registries.RECIPE_SERIALIZER)) {
+        SimpleInvoker.invokeModMethod(MODID, SerialLoader.class);
     }
+}
+
 
     @SubscribeEvent
     public static void gatherData(GatherDataEvent event) {

@@ -57,7 +57,7 @@ public record Chivalry(LevelingFormula bonus, int maxMultiplier)
     public void afterMeleeHit(IToolStackView tool, ModifierEntry modifier, ToolAttackContext context, float damageDealt) {
         if (context.getAttacker() instanceof Player player && context.getCooldown()>= 0.9f) {
             if (player.getAbsorptionAmount() < player.getMaxHealth() * (float) this.maxMultiplier) {
-                float maxAbs = Math.min(player.getMaxHealth() * (float) this.maxMultiplier, player.getAbsorptionAmount() + (float) modifier.getLevel()*damageDealt*0.25f*0.25f);
+                float maxAbs = Math.min(4*modifier.getLevel(), player.getAbsorptionAmount() + damageDealt*0.25f);
                 player.setAbsorptionAmount(maxAbs);
             }
         }
@@ -77,7 +77,7 @@ public record Chivalry(LevelingFormula bonus, int maxMultiplier)
     public boolean onProjectileHitEntity(ModifierNBT modifiers, ModDataNBT persistentData, ModifierEntry modifier, Projectile projectile, EntityHitResult hit, @Nullable LivingEntity attacker, @Nullable LivingEntity target) {
         if (attacker instanceof Player player) {
             if (player.getAbsorptionAmount() < player.getMaxHealth() * (float) this.maxMultiplier) {
-                float maxAbs = Math.min(player.getMaxHealth() * (float) this.maxMultiplier, player.getAbsorptionAmount() + (float) modifier.getLevel());
+                float maxAbs = Math.min(4*modifier.getLevel(), player.getAbsorptionAmount() + (float) modifier.getLevel());
                 player.setAbsorptionAmount(maxAbs);
             }
         }

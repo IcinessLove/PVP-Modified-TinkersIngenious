@@ -8,10 +8,6 @@
     {
       "amount": 500,
       "tag": "forge:ender"
-    },
-    {
-      "amount": 500,
-      "tag": "forge:dragon_breath"
     }
   ],
   "result": {

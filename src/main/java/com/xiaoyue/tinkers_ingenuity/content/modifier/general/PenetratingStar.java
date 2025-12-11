@@ -2,7 +2,10 @@ package com.xiaoyue.tinkers_ingenuity.content.modifier.general;
 
 import com.xiaoyue.tinkers_ingenuity.content.generic.SimpleModifier;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.entity.projectile.Projectile;
@@ -10,9 +13,11 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.phys.EntityHitResult;
+import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.Nullable;
 import slimeknights.tconstruct.library.modifiers.ModifierEntry;
 import slimeknights.tconstruct.library.modifiers.ModifierHooks;
+import slimeknights.tconstruct.library.modifiers.hook.armor.ProtectionModifierHook;
 import slimeknights.tconstruct.library.modifiers.hook.combat.MeleeDamageModifierHook;
 import slimeknights.tconstruct.library.modifiers.hook.ranged.ProjectileHitModifierHook;
 import slimeknights.tconstruct.library.module.ModuleHookMap;
@@ -21,12 +26,9 @@ import slimeknights.tconstruct.library.tools.nbt.IToolStackView;
 import slimeknights.tconstruct.library.tools.nbt.ModDataNBT;
 import slimeknights.tconstruct.library.tools.nbt.ModifierNBT;
 import slimeknights.tconstruct.library.tools.nbt.ToolStack;
+import slimeknights.tconstruct.library.tools.context.EquipmentContext;
 
 public class PenetratingStar extends SimpleModifier implements MeleeDamageModifierHook, ProjectileHitModifierHook {
-
-    // 匠魂保护类型ID
-    private static final ResourceLocation MELEE_PROTECTION_ID = new ResourceLocation("tconstruct", "melee_protection");
-    private static final ResourceLocation PROJECTILE_PROTECTION_ID = new ResourceLocation("tconstruct", "projectile_protection");
 
     @Override
     protected void addHooks(ModuleHookMap.Builder builder) {
@@ -34,27 +36,27 @@ public class PenetratingStar extends SimpleModifier implements MeleeDamageModifi
         builder.addHook(this, ModifierHooks.PROJECTILE_HIT);
     }
 
-    // 使用ToolStack检测保护层数
-    private int getTinkerProtectionLevel(LivingEntity entity, ResourceLocation protectionId) {
-        int total = 0;
-        for (EquipmentSlot slot : EquipmentSlot.values()) {
-            if (slot.getType() != EquipmentSlot.Type.ARMOR) continue;
-            
-            ItemStack armor = entity.getItemBySlot(slot);
-            if (armor.isEmpty()) continue;
-            
-            // 使用ToolStack的静态方法检查是否已初始化
-            if (ToolStack.isInitialized(armor)) {
-                ToolStack tool = ToolStack.from(armor);
-                for (ModifierEntry entry : tool.getModifiers().getModifiers()) {
-                    if (entry.getModifier().getId().equals(protectionId)) {
-                        total += entry.getLevel();
-                    }
-                }
+    private float computeTinkerProtection(LivingEntity entity, DamageSource source) {
+    EquipmentContext context = new EquipmentContext(entity);
+    float protection = 0f;
+
+    for (EquipmentSlot slot : EquipmentSlot.values()) {
+        if (slot.getType() != EquipmentSlot.Type.ARMOR) continue;
+
+        IToolStackView tool = context.getToolInSlot(slot);
+        if (tool == null) continue;
+
+        for (ModifierEntry entry : tool.getModifierList()) {
+
+            ProtectionModifierHook hook = entry.getHook(ModifierHooks.PROTECTION);
+            if (hook != null) {
+                protection = hook.getProtectionModifier(tool, entry, context, slot, source, protection);
             }
         }
-        return total;
     }
+
+    return protection;
+}
 
     // 获取原版保护等级
     private int getVanillaProtectionLevel(LivingEntity entity) {
@@ -78,25 +80,27 @@ public class PenetratingStar extends SimpleModifier implements MeleeDamageModifi
     public float getMeleeDamage(IToolStackView tool, ModifierEntry modifier, ToolAttackContext context, float baseDamage, float damage) {
         LivingEntity attacker = context.getPlayerAttacker();
         LivingEntity target = context.getLivingTarget();
+        Level world = attacker.getCommandSenderWorld();
         if (attacker != null && target != null) {
             // 获取所有保护类型
             int vanillaProtection = getVanillaProtectionLevel(target);
-            int tinkerMeleeProtection = getTinkerProtectionLevel(target, MELEE_PROTECTION_ID);
+            float tinkerMeleeProtection = computeTinkerProtection(target, new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.PLAYER_ATTACK)));
+            double protectionCap = ProtectionModifierHook.getProtectionCap(target);
             
             // 合并保护等级（匠魂每层相当于原版2层）
-            int total = vanillaProtection + tinkerMeleeProtection * 2;
-            total = Math.min(20, total);
+            double total = vanillaProtection + tinkerMeleeProtection;
+            total = Math.min(protectionCap, total);
             
             // 计算无视效果
             int penetration = modifier.getLevel() * 2; // 每级词条无视2层保护
-            int effectiveProtection = Math.max(0, total - penetration);
+            double effectiveProtection = Math.max(0, total - penetration);
             
             // 防止分母为0
-            int denominator = 25 - total;
+            double denominator = 25 - total;
             if (denominator <= 0) denominator = 1;
             
             // 计算伤害比例
-            float ratio = (25 - effectiveProtection) / (float) denominator;
+            float ratio = (25 - (float)effectiveProtection) / (float) denominator;
             return damage * ratio;
         }
         return damage;
@@ -108,22 +112,23 @@ public class PenetratingStar extends SimpleModifier implements MeleeDamageModifi
             // 获取所有保护类型
             int vanillaProtection = getVanillaProtectionLevel(target);
             int vanillaProjectileProtection = getVanillaProjectileProtectionLevel(target);
-            int tinkerProjectileProtection = getTinkerProtectionLevel(target, PROJECTILE_PROTECTION_ID);
+            float tinkerProjectileProtection = computeTinkerProtection(target, projectile.damageSources().arrow(arrow, attacker));
+            double protectionCap = ProtectionModifierHook.getProtectionCap(target);
             
             // 合并保护等级（匠魂每层相当于原版2层）
-            int total = vanillaProtection + vanillaProjectileProtection + tinkerProjectileProtection * 2;
-            total = Math.min(20, total);
+            double total = vanillaProtection + vanillaProjectileProtection + tinkerProjectileProtection;
+            total = Math.min(protectionCap, total);
             
             // 计算无视效果
             int penetration = modifier.getLevel() * 2; // 每级词条无视2层保护
-            int effectiveProtection = Math.max(0, total - penetration);
+            double effectiveProtection = Math.max(0, total - penetration);
             
             // 防止分母为0
-            int denominator = 25 - total;
+            double denominator = 25 - total;
             if (denominator <= 0) denominator = 1;
             
             // 计算伤害比例
-            float ratio = (25 - effectiveProtection) / (float) denominator;
+            float ratio = (25 - (float)effectiveProtection) / (float) denominator;
             arrow.setBaseDamage(arrow.getBaseDamage() * ratio);
         }
         return false;

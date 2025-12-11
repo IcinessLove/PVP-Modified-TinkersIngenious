@@ -1,10 +1,16 @@
 {
   "type": "tconstruct:melting",
+  "byproducts": [
+    {
+      "amount": 50,
+      "tag": "forge:molten_echo"
+    }
+  ],
   "ingredient": {
     "item": "minecraft:echo_shard"
   },
   "result": {
-    "amount": 45,
+    "amount": 50,
     "tag": "forge:sculk_gene"
   },
   "temperature": 1200,
